@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8def8481e91291a52f9baa31cbdb313e6a6ca02b" datatype="html">
+        <source>Hello i18n!</source>
+          <target>¿hola, qué tal?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header for this sample</note>
+      </trans-unit>
+      <trans-unit id="6763e0568d8cebe9ce38a6661e02d7a76670c2f1" datatype="html">
+        <source> Login Form i18n!</source>
+          <target>¿hola, qué tal?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="94f13d429ed7698f960d549eed6d3a00fa5ee2de" datatype="html">
+        <source>UserName: i18n!</source>
+          <target>¿hola, qué tal?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="39d62d6ec11a07305866ac430d038c49ddfb6b20" datatype="html">
+        <source>Password: i18n! </source>
+          <target>¿hola, qué tal?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/login/login.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

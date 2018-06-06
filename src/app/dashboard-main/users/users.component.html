@@ -1,0 +1,54 @@
+<p>
+  users works!
+</p>
+
+<!-- <ul>
+
+  <li *ngFor="let user of userArray">
+  {{ user.title }}
+</li>
+</ul> -->
+<button (click)="getSelectedRows()" style=" text-align:center">Get Selected Rows
+</button>
+
+<div style="position: fixed; top: 0; left: 0;">
+  Page Size:
+  <select (change)="onPageSizeChanged($event)" id="page-size">
+      <option value="10" selected="">10</option>
+      <option value="100">100</option>
+      <option value="500">500</option>
+      <option value="1000">1000</option>
+  </select>
+</div>
+
+<ag-grid-angular  #agGrid style="height: 515px; width: 1000px; float:right;"  class="ag-theme-balham" 
+                [rowData]="rowData" [columnDefs]="columnDefs" 
+                [pagination]="true" [paginationAutoPageSize]="true" 
+                [paginationPageSize]="paginationPageSize" 
+
+                [gridOptions]="gridOptions"  [enableSorting]="true"  [enableFilter]="true"
+                rowSelection="multiple" enableColResize="true"  >
+                <!-- suppressPaginationPanel=true suppressScrollOnNewData=true -->
+                <!-- [defaultColDef]="defaultColDef"  // Used for Editing Row Data  -->
+                <!--  (gridReady)="onGridReady($event)"  // Used when Grid is Ready  -->
+<!--                 [paginationNumberFormatter]="paginationNumberFormatter" -->
+</ag-grid-angular>
+
+
+
+<!-- <ul>
+  <li *ngFor="let eachUserObj of userArray" >
+    <a routerLink="/dashboard/user/{{ eachUserObj.id }}"  routerLinkActive="active">{{ eachUserObj.title }}</a>
+  </li>
+</ul> -->
+
+
+<div style="position: relative; top: 0; left: 0;">
+    Page Size:
+    <select (change)="onPageSizeChanged($event)" id="page-size">
+        <option value="10" selected="">10</option>
+        <option value="100">100</option>
+        <option value="500">500</option>
+        <option value="1000">1000</option>
+    </select>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="row">
+  
+        <div class="col-lg-8 col-lg-offset-2">
+                <h1 i18n="An introduction header for this sample">Hello i18n!</h1>
+            <p i18n  card-hover> Login Form i18n!</p>
+            <!-- <p class="form">
+                This is Contact Form for Contacting Author: <b>7988478484</b>
+            </p> -->
+            <form #loginForm="ngForm" (ngSubmit)="submitLogin()" enctype="multipart/form-data" > 
+                <div class="form-group">
+                    <label i18n for="name">UserName: i18n!</label>
+                    <input type="username"  email-validator class="form-control" id="name" name="username" [(ngModel)]="loginData.email" placeholder="Enter UserName" required>
+                  </div>
+                <div class="form-group">
+                    <label i18n for="email">Password: i18n! </label>
+                    <input type="password" card-hover class="form-control" id="email" name="password" [(ngModel)]="loginData.password" placeholder="Enter Password" required>
+                  </div>  
+                  <!-- <div class="form-group">
+                    <label for="file">File To Upload:</label>
+                    <input type="file" name="filetoupload" class="form-control" id="file" name="password" [(ngModel)]="loginData.filetoupload" placeholder="Upload File" (onSelect)="selectedFileName($event, 'addressProof')" required>
+                        <p-fileUpload name="myfile[]" accept="image/*" (onSelect)="selectedFileName($event, 'addressProof')"  auto="true" maxFileSize="1000000"></p-fileUpload>
+                        <p-fileUpload mode="basic" title=" " (onSelect)="selectedFileName($event, 'addressProof')" 
+                      name="file" accept=".jpeg,.jpg,.png,.pdf" maxFileSize="5000000" auto="true"></p-fileUpload>
+                  </div>                -->
+                <button type="submit" class="btn btn-default">Submit</button>      
+            </form> 
+  
+        </div>
+  
+    </div>
+  
+    </div>
+  
